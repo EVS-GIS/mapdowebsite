@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "mapdowebsite",
+    "title": "Projet MAPD’O",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "MAPD'O est un projet visant le développement d'une interface web à l'intention des opérateurs autour des données et modèles en hydromorphologie. C'est un projet réalisé par le laboratoire Environnement Ville Société du CNRS et porté par l'Office Français de la Biodiversité depuis janvier 2023.\nL'application repose sur des approches géomatiques d'analyse de la topographie et de l'occupation du sol permettant de produire une carte de continuité latérale des cours d'eau du réseau hydrographique. Différentes métriques morphologiques sont ensuite extraites à intervalle régulier du réseau (largeur, pente, surface drainée, élévation). L'application a pour ambition de fournir des outils d'analyse et d'interprétation de ces métriques afin de faciliter les diagnostics hydromorphologiques des cours d'eau français à l'échelle du bassin versant.\n\n\n\nApplication MAPD’O"
   },
   {
     "objectID": "about.html",
