@@ -7,8 +7,11 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: Home
-      - about.qmd
+        text: Accueil
+      - href: ebf.qmd
+        text: Espace de bon fonctionnement
+      - href: about.qmd
+        text: A propos
 
 format:
   html:

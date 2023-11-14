@@ -1,0 +1,9 @@
+---
+title: "Espace de bon fonctionnement"
+---
+
+Dans le cadre d'une délimitation de l'espace de bon fonctionnement plusieurs métriques peuvent être mobilisées pour la description des tronçons du réseau hydrographique selon leur géomorphologie afin de construire des unités fonctionnelles.
+
+-   Le fond de carte de la géologie pour identifier les secteurs sous contraintes géologiques et les zones de dépôt alluvionnaire.
+
+-   
