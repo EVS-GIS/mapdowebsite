@@ -10,6 +10,8 @@ website:
         text: Accueil
       - href: ebf.qmd
         text: Espace de bon fonctionnement
+      - href: inondation.qmd
+        text: Risque d'inondation
       - href: about.qmd
         text: A propos
 
