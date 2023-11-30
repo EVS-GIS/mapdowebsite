@@ -4,27 +4,27 @@ title: "Risque d'inondation"
 
 Dans le cadre d'un projet de plan de gestion d'un bassin versant, le potentiel de certaines solutions de limitation du risque dans les espaces à enjeux telles que les zones d'expansion de crue ou l'augmentation de l'espace de liberté peut être évalué. Les jeux de données disponibles au sein de l'application Mapd'O peuvent être utilisé dans l'objectif de réalisation d'un pré-diagnostic. Il peut permettre de de fournir des éléments quantitatifs et de communication préalable au lancement de diagnostics plus précis et ciblés.
 
-## Visualisation des secteurs à fort enjeux
+## Visualisation des secteurs à forts enjeux
 
 Une première visualisation des enjeux peut être effectuée à l'aide des données d'occupation du sol avec la surface bâtie dans les fond de vallée . Les zones inondables et les ouvrages de protections contre les inondations issus de [géorisques.gouv.fr](https://www.georisques.gouv.fr/) permettent de mettre en valeurs les secteurs inondés et protégés par des digues classées.
 
 ## Identification des potentialités d'expansion des crues
 
-La recherche de zones d\'expansion de crues potentielles va être orientée par plusieurs critères géomorphologiques tels que  : 
+La recherche de zones d'expansion de crues potentielles va être orientée par plusieurs critères géomorphologiques tels que  : 
 
 -   Une altimétrie faible, proche de celle du fond du lit actuel, dans le fond de vallée.
 
--   La présence d\'alluvions récentes qui sont également un indicateur d\'une zone de débordement et d\'une connexion avec le réseau hydrographique.
+-   La présence d'alluvions récentes qui sont également un indicateur d'une zone de débordement et d'une connexion avec le réseau hydrographique.
 
--   Une situation combinant bande active étroite et un fond de vallée plus large, soit un indice de confinement faible, indicatrice d\'un potentiel espace potentiel d'élargissement.
+-   Une situation combinant bande active étroite et un fond de vallée plus large, soit un indice de confinement faible, indicatrice d'un potentiel espace potentiel d'élargissement.
 
--   Un resserrement latéral du lit majeur qui peut également créer une zone de ralentissement et une hausse du niveau d\'eau en amont.
+-   Un resserrement latéral du lit majeur qui peut également créer une zone de ralentissement et une hausse du niveau d'eau en amont.
 
 Les données pouvant être utilisées lors de cette étape sont :
 
 -   Le MNT détendancé,
 
--   L\'indice de confinement,
+-   L'indice de confinement,
 
 -   La largeur de la bande active,
 
@@ -34,19 +34,18 @@ Les données pouvant être utilisées lors de cette étape sont :
 
 -   Les surfaces déconnectées de la bande active.
 
-Les secteurs déconnectés peuvent en effet être utilisés pour déterminer les espaces pouvant être reconnectés au cours d\'eau en servant de zones de débordement potentielles . Ils rendent donc compte indirectement de l\'impact de certains aménagements sur la continuité latérale.
+Les secteurs déconnectés peuvent en effet être utilisés pour déterminer les espaces pouvant être reconnectés au cours d'eau en servant de zones de débordement potentielles . Ils rendent donc compte indirectement de l'impact de certains aménagements sur la continuité latérale.
 
-## Obstacles à l\'augmentation de l\'espace de liberté
+## Obstacles à l'augmentation de l'espace de liberté
 
-A partir des secteurs à faibles enjeux, on peut chercher à déterminer les causes des déconnections. Les infrastructures de transport sont généralement à l\'origine de nombreuses déconnections du cours d'eau avec son espace alluvial. La surface d\'infrastructure de transport dans le fond de vallée permet de visualiser les espaces déconnectés probablement par ce facteur. Les digues et remblais sont également des éléments de déconnection de l\'espace alluvial. Ces ouvrages sont néanmoins généralement localisés dans des zones à forts enjeux comme les espaces urbanisés.
+A partir des secteurs à faibles enjeux, on peut chercher à déterminer les causes des déconnections. Les infrastructures de transport sont généralement à l'origine de nombreuses déconnections du cours d'eau avec son espace alluvial. La surface d'infrastructure de transport dans le fond de vallée permet de visualiser les espaces déconnectés probablement par ce facteur. Les digues et remblais sont également des éléments de déconnection de l'espace alluvial. Ces ouvrages sont néanmoins généralement localisés dans des zones à forts enjeux comme les espaces urbanisés.
 
 Les jeux de données pouvant être utilisés sont : 
 
 -   Les surfaces déconnectées de la bande active.
 
-```{=html}
 <!-- -->
-```
--   Les surfaces d\'infrastructure de transport.
+
+-   Les surfaces d'infrastructure de transport.
 
 -   Les ouvrages de protection contre les inondations.
