@@ -1,0 +1,47 @@
+---
+title: "Méthodologie"
+---
+
+## Production des données
+
+### Données de base
+
+Les données de base utilisées pour la production des cartes sont les suivantes :
+
+
+| **Donnée** | **Description** | **Source** |
+|-----------------|--------------------------------------|-----------------|
+| RGE ALTI | Modèle Numérique de Terrain de l’IGN | [IGN](https://geoservices.ign.fr/rgealti) |
+| BD TOPO® | Base de données topographiques de l’IGN | [IGN](https://geoservices.ign.fr/bdtopo) |
+
+### Traitement des données
+
+[Fluvial Corridor Toolbox (FCT)](https://tramebleue.github.io/fct-cli/) est un outil d’analyse hydromorphique de rivière par des approches géomatiques développé depuis 2011. L’outil a été initialement réalisé sur ArcGIS, puis sur QGIS et en Python 3. La version QGIS est disponible sous forme de plugin depuis 2019 et compte environ 10 téléchargements par mois. La version Python, moins répandue car plus difficile à utiliser, est destinée à l’analyse de réseaux hydrographiques entiers plutôt que des tronçons de cours d’eau. C’est cette dernière qui est utilisée pour produire les données exploitées dans l’application Mapd’O. Elle permet d'extraire des largeurs, des pentes, l'occupation du sol, la continuité latérale des cours d'eau à partir de données librement accessibles comme la BD TOPO® et les MNT de l'IGN. Ces variables sont synthétisées par tronçon le long de l’axe du fond de vallée (DGO ou Digital Geographical Unit) d’une longueur aujourd’hui défini à 200 mètres.
+
+| **Variable** | **Description** | **Unité** |
+|-----------------|--------------------------------------|-----------------|
+| drainage_surface | surface drainée moyenne le long du talweg pour chaque DGO | km2 |
+| continuity_valley_bottom | surface de chaque classe de continuité latérale dans le fond de vallée | m2 |
+| sinuosity_index | indice de sinuosité (en développement) |  |
+| valley_bottom | surface du fond de vallée | m2 |
+| landcover_valley_bottom | surface de chaque classe d’occupation du sol dans le fond de vallée | m2 |
+| slope_talweg | pente moyenne du talweg | \% |
+| containment_index | indice de confinement (largeur bande active / largeur vallée), voir thèse Elise |  |
+| active_chanel_width | largeur moyenne de la bande active | m |
+| natural_corridor_width | largeur moyenne du corridor naturel | m |
+| connected_corridor_width | largeur moyenne de l’espace connecté au cours d’eau | m |
+| elevation_talweg | altitude du talweg | m |
+| slope_valley_bottom | pente moyenne du fond de vallée | \% |
+| landcover_hypsometer_surface | surface de chaque classe d’occupation du sol du BV au niveau du DGO | km2 |
+
+: Synthèse des métriques produites par la FCT à l’échelle des DGO
+
+Le BD TOPO® est utilisé pour produire une carte d’occupation des sols et une carte de continuité latérale des cours d’eau fournis par l'utilisateur afin de déterminer les différents compartiments de la vallée alluviale. L’espace est ensuite découpé en tronçon de 200m le long des cours d’eau.
+
+![Carte d’occupation des sols du Drac à Saint-Julien-en-Champsaur, générée à partir de la BD TOPO® de l’IGN](images/methods/fct_landuse_ex.png){fig-alt="Carte d’occupation des sols générée à partir de la BD TOPO® de l’IGN"}
+
+![Carte de continuité latérale du Drac à Saint-Julien-en-Champsaur, issue de la carte d’occupation des sols](images/methods/ftc_continuity_ex.png)
+
+![Correspondance des espaces de la continuité latérale sur le Drac à Chabottes](images/methods/ftc_photo_ex.png)
+
+Des métriques sont ensuite calculées sur les différents espaces alluviaux et reportées sur le réseau hydrographique pour de futures représentations cartographiques et longitudinales.

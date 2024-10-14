@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Mapd'O – Espace de bon fonctionnement</title>
+<title>Mapd'O – Méthodologie</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -95,12 +95,16 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Accueil</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./ebf.html" aria-current="page"> 
-<span class="menu-text">Espace de bon fonctionnement</span></a>
+    <a class="nav-link active" href="./methods.html" aria-current="page"> 
+<span class="menu-text">Méthodologie</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./inondation.html"> 
-<span class="menu-text">Risque d’inondation</span></a>
+    <a class="nav-link" href="./modules.html"> 
+<span class="menu-text">Modules</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./themes.html"> 
+<span class="menu-text">Enjeux thématiques</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
@@ -118,15 +122,25 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#production-des-données" id="toc-production-des-données" class="nav-link active" data-scroll-target="#production-des-données">Production des données</a>
+  <ul class="collapse">
+  <li><a href="#données-de-base" id="toc-données-de-base" class="nav-link" data-scroll-target="#données-de-base">Données de base</a></li>
+  <li><a href="#traitement-des-données" id="toc-traitement-des-données" class="nav-link" data-scroll-target="#traitement-des-données">Traitement des données</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Espace de bon fonctionnement</h1>
+<h1 class="title">Méthodologie</h1>
 </div>
 
 
@@ -143,16 +157,142 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Dans le cadre d’une délimitation de l’espace de bon fonctionnement plusieurs métriques peuvent être mobilisées pour la description des tronçons du réseau hydrographique selon leur géomorphologie afin de construire des unités fonctionnelles. :</p>
-<ul>
-<li>Le profil d’élévation du talweg permet l’analyse de la structure des pentes et des points de contrôle naturels et anthropiques.</li>
-<li>Le fond de carte de la géologie pour identifier les secteurs sous contraintes géologiques et les zones de dépôt alluvionnaire.</li>
-<li>Dans la recherche de tronçons représentatifs et de l’évolution morphologique des cours d’eau du bassin versant, de nombreuses ressources cartographiques et d’imageries sont mises à disposition sur le site <a href="https://remonterletemps.ign.fr">remonterletemps.fr</a> de l’IGN.</li>
-<li>Le modèle numérique de terrain détendancé permet également de visualiser d’anciennes annexes fluviales ou d’anciens tracés.</li>
-<li>La détermination des styles fluviaux actuels définis dans le guide EBF de l’Agence de l’Eau (2016) peut s’appuyer notamment sur la pente du talweg, l’indice de sinuosité et la visualisation des images aériennes ou satellitaires. Ils sont à mettre en parallèle avec les aménagements (endiguement, barrage, rectification…) disponibles en partie avec les données du référentiel des obstacles à l’écoulement (ROE), les ouvrages de protections contre les inondations et plus généralement avec l’occupation du sol dans les fonds de vallée, avec une attention particulière aux infrastructures de transport.</li>
-</ul>
+<section id="production-des-données" class="level2">
+<h2 class="anchored" data-anchor-id="production-des-données">Production des données</h2>
+<section id="données-de-base" class="level3">
+<h3 class="anchored" data-anchor-id="données-de-base">Données de base</h3>
+<p>Les données de base utilisées pour la production des cartes sont les suivantes :</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><strong>Donnée</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Source</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>RGE ALTI</td>
+<td>Modèle Numérique de Terrain de l’IGN</td>
+<td><a href="https://geoservices.ign.fr/rgealti">IGN</a></td>
+</tr>
+<tr class="even">
+<td>BD TOPO®</td>
+<td>Base de données topographiques de l’IGN</td>
+<td><a href="https://geoservices.ign.fr/bdtopo">IGN</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="traitement-des-données" class="level3">
+<h3 class="anchored" data-anchor-id="traitement-des-données">Traitement des données</h3>
+<p><a href="https://tramebleue.github.io/fct-cli/">Fluvial Corridor Toolbox (FCT)</a> est un outil d’analyse hydromorphique de rivière par des approches géomatiques développé depuis 2011. L’outil a été initialement réalisé sur ArcGIS, puis sur QGIS et en Python 3. La version QGIS est disponible sous forme de plugin depuis 2019 et compte environ 10 téléchargements par mois. La version Python, moins répandue car plus difficile à utiliser, est destinée à l’analyse de réseaux hydrographiques entiers plutôt que des tronçons de cours d’eau. C’est cette dernière qui est utilisée pour produire les données exploitées dans l’application Mapd’O. Elle permet d’extraire des largeurs, des pentes, l’occupation du sol, la continuité latérale des cours d’eau à partir de données librement accessibles comme la BD TOPO® et les MNT de l’IGN. Ces variables sont synthétisées par tronçon le long de l’axe du fond de vallée (DGO ou Digital Geographical Unit) d’une longueur aujourd’hui défini à 200 mètres.</p>
+<table class="caption-top table">
+<caption>Synthèse des métriques produites par la FCT à l’échelle des DGO</caption>
+<colgroup>
+<col style="width: 23%">
+<col style="width: 52%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Variable</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Unité</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>drainage_surface</td>
+<td>surface drainée moyenne le long du talweg pour chaque DGO</td>
+<td>km2</td>
+</tr>
+<tr class="even">
+<td>continuity_valley_bottom</td>
+<td>surface de chaque classe de continuité latérale dans le fond de vallée</td>
+<td>m2</td>
+</tr>
+<tr class="odd">
+<td>sinuosity_index</td>
+<td>indice de sinuosité (en développement)</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>valley_bottom</td>
+<td>surface du fond de vallée</td>
+<td>m2</td>
+</tr>
+<tr class="odd">
+<td>landcover_valley_bottom</td>
+<td>surface de chaque classe d’occupation du sol dans le fond de vallée</td>
+<td>m2</td>
+</tr>
+<tr class="even">
+<td>slope_talweg</td>
+<td>pente moyenne du talweg</td>
+<td>%</td>
+</tr>
+<tr class="odd">
+<td>containment_index</td>
+<td>indice de confinement (largeur bande active / largeur vallée), voir thèse Elise</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>active_chanel_width</td>
+<td>largeur moyenne de la bande active</td>
+<td>m</td>
+</tr>
+<tr class="odd">
+<td>natural_corridor_width</td>
+<td>largeur moyenne du corridor naturel</td>
+<td>m</td>
+</tr>
+<tr class="even">
+<td>connected_corridor_width</td>
+<td>largeur moyenne de l’espace connecté au cours d’eau</td>
+<td>m</td>
+</tr>
+<tr class="odd">
+<td>elevation_talweg</td>
+<td>altitude du talweg</td>
+<td>m</td>
+</tr>
+<tr class="even">
+<td>slope_valley_bottom</td>
+<td>pente moyenne du fond de vallée</td>
+<td>%</td>
+</tr>
+<tr class="odd">
+<td>landcover_hypsometer_surface</td>
+<td>surface de chaque classe d’occupation du sol du BV au niveau du DGO</td>
+<td>km2</td>
+</tr>
+</tbody>
+</table>
+<p>Le BD TOPO® est utilisé pour produire une carte d’occupation des sols et une carte de continuité latérale des cours d’eau fournis par l’utilisateur afin de déterminer les différents compartiments de la vallée alluviale. L’espace est ensuite découpé en tronçon de 200m le long des cours d’eau.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/methods/fct_landuse_ex.png" class="img-fluid figure-img" alt="Carte d’occupation des sols générée à partir de la BD TOPO® de l’IGN"></p>
+<figcaption>Carte d’occupation des sols du Drac à Saint-Julien-en-Champsaur, générée à partir de la BD TOPO® de l’IGN</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/methods/ftc_continuity_ex.png" class="img-fluid figure-img"></p>
+<figcaption>Carte de continuité latérale du Drac à Saint-Julien-en-Champsaur, issue de la carte d’occupation des sols</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/methods/ftc_photo_ex.png" class="img-fluid figure-img"></p>
+<figcaption>Correspondance des espaces de la continuité latérale sur le Drac à Chabottes</figcaption>
+</figure>
+</div>
+<p>Des métriques sont ensuite calculées sur les différents espaces alluviaux et reportées sur le réseau hydrographique pour de futures représentations cartographiques et longitudinales.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

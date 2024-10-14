@@ -8,10 +8,12 @@ website:
     left:
       - href: index.qmd
         text: Accueil
-      - href: ebf.qmd
-        text: Espace de bon fonctionnement
-      - href: inondation.qmd
-        text: Risque d'inondation
+      - href: methods.qmd
+        text: Méthodologie
+      - href: modules.qmd
+        text: Modules
+      - href: themes.qmd
+        text: Enjeux thématiques
       - href: about.qmd
         text: A propos
 
