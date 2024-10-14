@@ -1,13 +1,13 @@
 ---
-title: "Projet MAPD'O"
+title: "Projet Mapd'O"
 ---
 
-MAPD'O est un projet visant le développement d'une interface web à l'intention des opérateurs autour des données et modèles en hydromorphologie. C'est un projet réalisé par le laboratoire Environnement Ville Société du CNRS et porté par l'Office Français de la Biodiversité depuis janvier 2023.
+Le projet **Mapd'O** vise à développer une [interface web](https://isig-apps.ens-lyon.fr/apps/mapdo/mapdoapp/) permettant aux opérateurs et aux scientifiques d'analyser les données et les modèles hydromorphologiques du réseau hydrographique français. Le projet est porté par le laboratoire *CNRS UMR 5600 - Environnement Ville Société (EVS)* et est soutenu par *l'Office Français de la Biodiversité* depuis janvier 2023.
 
-L'application repose sur des approches géomatiques d'analyse de la topographie et de l'occupation du sol permettant de produire une carte de continuité latérale des cours d'eau du réseau hydrographique. Différentes métriques morphologiques sont ensuite extraites à intervalle régulier du réseau (largeur, pente, surface drainée, élévation). L'application a pour ambition de fournir des outils d'analyse et d'interprétation de ces métriques afin de faciliter les diagnostics hydromorphologiques des cours d'eau français à l'échelle du bassin versant.
+L'application est basée sur les résultats de la [Fluvial Corridor Toolbox (FCT)](https://tramebleue.github.io/fct-cli/) appliquée au réseau hydrographique français. Également développée par le laboratoire EVS, la FCT est une boîte à outils de système d'information géographique pour l'hydromporphologie à grande échelle, fournissant des approches géomatiques à l'analyse de la topographie et de l'occupation des sols, et permettant la production de cartes de continuité latérale et d'autres caractéristiques fluviales. Les couches de fond de vallée et de corridor fluvial sont d'abord extraites d'un modèle numérique d'élévation. Diverses mesures morphologiques, telles que l'occupation et l'utilisation des sols, la largeur, la pente, la surface drainée, l'altitude, sont ensuite extraites du réseau à intervalles réguliers en fusionnant les données avec les cartes d'occupation des sols.
 
-L'application dispose aujourd'hui d'un module d'exploration des données permettant de visualiser les différentes métriques mises à disposition pour l'analyse de bassin versant.
+Avec **Mapd'O**, ces données peuvent être interprétées et analysées pour faciliter les diagnostics hydromorphologiques des rivières françaises à différentes échelles, telles que l'ensemble du bassin versant des principales rivières françaises, mais aussi leur sous-bassin versant et l'échelle de l'axe individuel de la rivière.
 
-![Module d'exploration des données](images/copie_ecran_mapdoapp.PNG)
+![Aperçu de l'interface de l'application.s](imaCapture_d’écran_2024-10-14_mapdoapp.png)
 
-**Contact** : Louis Manière (CNRS UMR 5600, Environnement Ville Société) - louis.maniere\@ens-lyon.fr
+**Contact** : Lise Vaudor (CNRS UMR 5600, Environnement Ville Société) - lise.vaudor\@ens-lyon.fr
