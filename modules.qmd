@@ -1,0 +1,19 @@
+---
+title: "Modules et fonctionnalités de l’application"
+---
+
+Mapd'o est divisé dans des differentes modules qui ont des fonctionnalités différentes. Les modules sont les suivants:
+
+
+## Exploration \& Classification
+
+Ce module constitue l'interface cartographique de l'application. Il permet à l'utilisateur de visualiser et d'explorer les données via la carte, y compris le réseau hydrographique, les délimitations des bassins hydrographiques et des régions, et les différentes cartes produites par le FCT telles que la carte de fond de vallée et la carte de continuité latérale. Des données externes telles que les stations de mesure de débit et les obstacles à l'écoulement sont également incluses. Le module permet également d'appliquer des classifications au réseau hydrographique, en le divisant en différentes classes qui sont soit proposées par l'application, soit créées par l'utilisateur sur la base des métriques disponibles. Enfin, le module permet de visualiser l'évolution longitudinale des mesures spécifiées sur un axe sélectionné et le profil transversal de la hauteur par rapport au talweg d'un segment sélectionné.
+
+## Analyse
+
+Ce module permet à l'utilisateur de comparer des données à différentes échelles, notamment l'axe, la région, le bassin et la France. Il permet également de comparer la répartition des classes entre ces entités. Enfin, le module permet de visualiser la relation entre les différentes métriques d'un axe et d'appliquer un modèle de régression linéaire.
+
+
+## Téléchargement
+
+Ce module permet à l'utilisateur de télécharger des données cartographiques au format CSV, y compris des données sur les troncs pour un axe ou une région spécifique avec toutes les métriques et classes intégrées, ainsi que les sites hydrométriques ou les obstacles à l'écoulement dans une zone spécifiée.

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Mapd'O – Projet Mapd’O</title>
+<title>Mapd'O – Modules et fonctionnalités de l’application</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -91,7 +91,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Accueil</span></a>
   </li>  
   <li class="nav-item">
@@ -99,7 +99,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Méthodologie</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./modules.html"> 
+    <a class="nav-link active" href="./modules.html" aria-current="page"> 
 <span class="menu-text">Modules</span></a>
   </li>  
   <li class="nav-item">
@@ -122,15 +122,23 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#exploration-classification" id="toc-exploration-classification" class="nav-link active" data-scroll-target="#exploration-classification">Exploration &amp; Classification</a></li>
+  <li><a href="#analyse" id="toc-analyse" class="nav-link" data-scroll-target="#analyse">Analyse</a></li>
+  <li><a href="#téléchargement" id="toc-téléchargement" class="nav-link" data-scroll-target="#téléchargement">Téléchargement</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Projet Mapd’O</h1>
+<h1 class="title">Modules et fonctionnalités de l’application</h1>
 </div>
 
 
@@ -147,19 +155,21 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Le projet <strong>Mapd’O</strong> vise à développer une interface web permettant aux opérateurs et aux scientifiques d’analyser les données et les modèles hydromorphologiques du réseau hydrographique français. Le projet est porté par le laboratoire <em>CNRS UMR 5600 - Environnement Ville Société (EVS)</em> et est soutenu par <em>l’Office Français de la Biodiversité</em> depuis janvier 2023.</p>
-<p>L’application est basée sur les résultats de la <a href="https://tramebleue.github.io/fct-cli/">Fluvial Corridor Toolbox (FCT)</a> appliquée au réseau hydrographique français. Également développée par le laboratoire EVS, la FCT est une boîte à outils de système d’information géographique pour l’hydromporphologie à grande échelle, fournissant des approches géomatiques à l’analyse de la topographie et de l’occupation des sols, et permettant la production de cartes de continuité latérale et d’autres caractéristiques fluviales. Les couches de fond de vallée et de corridor fluvial sont d’abord extraites d’un modèle numérique d’élévation. Diverses mesures morphologiques, telles que l’occupation et l’utilisation des sols, la largeur, la pente, la surface drainée, l’altitude, sont ensuite extraites du réseau à intervalles réguliers en fusionnant les données avec les cartes d’occupation des sols.</p>
-<p>Avec <strong>Mapd’O</strong>, ces données peuvent être interprétées et analysées pour faciliter les diagnostics hydromorphologiques des rivières françaises à différentes échelles, telles que l’ensemble du bassin versant des principales rivières françaises, mais aussi leur sous-bassin versant et l’échelle de l’axe individuel de la rivière.</p>
-<p>L’application peut être accédé en cliquant sur <a href="https://isig-apps.ens-lyon.fr/apps/mapdo/mapdoapp/" title="https://isig-apps.ens-lyon.fr/apps/mapdo/mapdoapp/">ce lien</a> !</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/Capture_d’écran_2024-10-14_mapdoapp.png" class="img-fluid figure-img"></p>
-<figcaption>Aperçu de l’interface de l’application</figcaption>
-</figure>
-</div>
-<p><strong>Contact</strong> : Lise Vaudor (CNRS UMR 5600, Environnement Ville Société) - <a href="mailto:lise.vaudor@ens-lyon.fr">lise.vaudor@ens-lyon.fr</a></p>
+<p>Mapd’o est divisé dans des differentes modules qui ont des fonctionnalités différentes. Les modules sont les suivants:</p>
+<section id="exploration-classification" class="level2">
+<h2 class="anchored" data-anchor-id="exploration-classification">Exploration &amp; Classification</h2>
+<p>Ce module constitue l’interface cartographique de l’application. Il permet à l’utilisateur de visualiser et d’explorer les données via la carte, y compris le réseau hydrographique, les délimitations des bassins hydrographiques et des régions, et les différentes cartes produites par le FCT telles que la carte de fond de vallée et la carte de continuité latérale. Des données externes telles que les stations de mesure de débit et les obstacles à l’écoulement sont également incluses. Le module permet également d’appliquer des classifications au réseau hydrographique, en le divisant en différentes classes qui sont soit proposées par l’application, soit créées par l’utilisateur sur la base des métriques disponibles. Enfin, le module permet de visualiser l’évolution longitudinale des mesures spécifiées sur un axe sélectionné et le profil transversal de la hauteur par rapport au talweg d’un segment sélectionné.</p>
+</section>
+<section id="analyse" class="level2">
+<h2 class="anchored" data-anchor-id="analyse">Analyse</h2>
+<p>Ce module permet à l’utilisateur de comparer des données à différentes échelles, notamment l’axe, la région, le bassin et la France. Il permet également de comparer la répartition des classes entre ces entités. Enfin, le module permet de visualiser la relation entre les différentes métriques d’un axe et d’appliquer un modèle de régression linéaire.</p>
+</section>
+<section id="téléchargement" class="level2">
+<h2 class="anchored" data-anchor-id="téléchargement">Téléchargement</h2>
+<p>Ce module permet à l’utilisateur de télécharger des données cartographiques au format CSV, y compris des données sur les troncs pour un axe ou une région spécifique avec toutes les métriques et classes intégrées, ainsi que les sites hydrométriques ou les obstacles à l’écoulement dans une zone spécifiée.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
