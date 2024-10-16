@@ -2,3 +2,13 @@
 title: "Modules et fonctionnalités de l’application"
 ---
 
+Mapd'o est divisé dans des differentes modules qui ont des fonctionnalités différentes. Les modules sont les suivants:
+
+
+## Exploration \& Classification
+
+
+## Analyse
+
+
+## Téléchargement

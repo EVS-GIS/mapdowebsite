@@ -8,11 +8,13 @@ Manière, L., Helling, L., Dunesme, S., & Vaudor, L. (2024). EVS-GIS/mapdoapp. U
 
 ## Partenaires
 
-![](images/Logo-OFB-soutien-financier-01.png){width="118"}
+::: {layout-ncol="3" layout-align="center" }
+[![](images/Logo-EVS-UMR5600-01.png)](https://umr5600.cnrs.fr/fr/accueil/){width="120"}
 
-![](images/Logo-EVS-UMR5600-01.png){width="106"}
+[![](images/Logo-OFB-soutien-financier-01.png)](https://www.ofb.gouv.fr/){width="120"}
 
-![](images/CNRS-Logo-01.png){width="138"}
+[![](images/CNRS-Logo-01.png)](https://www.cnrs.fr/){width="350"}
+:::
 
 ## Développement
 
@@ -20,10 +22,10 @@ Manière, L., Helling, L., Dunesme, S., & Vaudor, L. (2024). EVS-GIS/mapdoapp. U
 -   Leo Helling
 -   Samuel Dunesme
 
+Le code source est disponible sur [GitHub](https://github.com/EVS-GIS/mapdoapp).
+
 ## Référent scientifique
 
 Lise Vaudor, *CNRS UMR 5600 Environnement Ville Société* - [lise.vaudor\@ens-lyon.fr](mailto:lise.vaudor@ens-lyon.fr)
 
-## Code source
 
-[GitHub](https://github.com/EVS-GIS/mapdoapp)

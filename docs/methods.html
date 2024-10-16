@@ -127,11 +127,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#production-des-données" id="toc-production-des-données" class="nav-link active" data-scroll-target="#production-des-données">Production des données</a>
+  <li><a href="#étude-des-besoins" id="toc-étude-des-besoins" class="nav-link active" data-scroll-target="#étude-des-besoins">Étude des besoins</a>
+  <ul class="collapse">
+  <li><a href="#enjeux-exprimés" id="toc-enjeux-exprimés" class="nav-link" data-scroll-target="#enjeux-exprimés">Enjeux exprimés</a></li>
+  <li><a href="#synthèse-des-besoins" id="toc-synthèse-des-besoins" class="nav-link" data-scroll-target="#synthèse-des-besoins">Synthèse des besoins</a></li>
+  </ul></li>
+  <li><a href="#production-des-données" id="toc-production-des-données" class="nav-link" data-scroll-target="#production-des-données">Production des données</a>
   <ul class="collapse">
   <li><a href="#données-de-base" id="toc-données-de-base" class="nav-link" data-scroll-target="#données-de-base">Données de base</a></li>
   <li><a href="#traitement-des-données" id="toc-traitement-des-données" class="nav-link" data-scroll-target="#traitement-des-données">Traitement des données</a></li>
+  <li><a href="#stockage-des-données" id="toc-stockage-des-données" class="nav-link" data-scroll-target="#stockage-des-données">Stockage des données</a></li>
   </ul></li>
+  <li><a href="#création-de-lapplication" id="toc-création-de-lapplication" class="nav-link" data-scroll-target="#création-de-lapplication">Création de l’application</a></li>
   </ul>
 </nav>
     </div>
@@ -157,29 +164,73 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>Le projet Mapd’O a été développé en plusieurs étapes. Tout d’abord, le concept de l’application a été élaboré, avec la réalisation d’un audit auprès de potentiels futurs utilisateurs afin de mieux comprendre leurs besoins et les cas d’usage envisagés pour l’application. Ensuite, la phase de développement a suivi, incluant la création des jeux de données et, en parallèle, le développement de l’application web. Les sections suivantes fournissent plus d’informations sur ces différentes étapes.</p>
+<section id="étude-des-besoins" class="level2">
+<h2 class="anchored" data-anchor-id="étude-des-besoins">Étude des besoins</h2>
+<p>Le fonctionnement physique des rivières à l’échelle du bassin versant fait régulièrement l’objet de diagnostics dans le cadre d’états des lieux des milieux aquatiques, souvent réalisés par les syndicats de bassin versant. Ces diagnostics sont effectués pour planifier stratégiquement les actions à mener en vue d’améliorer les milieux aquatiques. Ils sont ainsi utilisés dans des dispositifs réglementaires comme les contrats de milieu, les SAGE, ou d’autres outils de programmation spécifiques aux Agences de l’Eau. Les bureaux d’études interviennent régulièrement dans ce type d’évaluation.</p>
+<p>L’application Mapd’O vise à caractériser le fonctionnement hydromorphologique des cours d’eau d’un bassin versant, notamment en lien avec la notion d’« espaces de bon fonctionnement ». Elle intègre également des indicateurs relatifs à la dynamique latérale des cours d’eau. De plus, l’application s’inscrit parmi les outils à grande échelle mis à disposition des gestionnaires pour initier un état des lieux ou commander une étude spécifique, tout en offrant une vision globale du fonctionnement hydromorphologique des cours d’eau et des enjeux territoriaux.</p>
+<p>Afin de mieux cerner les besoins opérationnels des futurs usagers de l’application, un audit a été mené auprès de différents gestionnaires de cours d’eau et bureaux d’études, de janvier à mai 2023. Les syndicats de bassin versant, tels que les EPTB, ont été principalement ciblés par cet audit. Quelques bureaux d’études, ainsi que des services départementaux et les DREAL, ont également été consultés. Le choix des structures s’est appuyé d’une part sur le réseau du laboratoire EVS et de l’OFB, et d’autre part sur l’Association Nationale des Élus de Bassin Versant (ANEB), qui représente de nombreux EPTB.</p>
+<p>L’audit a pris la forme d’entretiens visant à expliquer la démarche et les méthodes du projet, puis à discuter des données et fonctionnalités que l’application pourrait mettre à disposition des structures sur les bassins versants. Lors de ces entretiens, plusieurs constats et besoins exprimés ont été récurrents, permettant ainsi de dresser un premier cadre d’utilisation opérationnelle de l’application.</p>
+<section id="enjeux-exprimés" class="level3">
+<h3 class="anchored" data-anchor-id="enjeux-exprimés">Enjeux exprimés</h3>
+<p>Plusieurs enjeux sont ressortis de ces entretiens :</p>
+<ul>
+<li><p>Le risque d’inondation, notamment pour des cours d’eau rectifiés avec des temps de réponse courts aux évènements pluvieux et la problématique du manque d’espace d’expansion des crues des rivières en amont des espaces à plus fort enjeux.</p></li>
+<li><p>L’abaissement de la nappe d’accompagnement par incision du lit, qui peut être problématique pour le placement des points de captage d’eau potable.</p></li>
+<li><p>La dégradation des ouvrages d’art ou des ouvrages de protection contre les inondations par incision du lit.</p></li>
+<li><p>La diminution des ressources en eau par une mauvaise connexion des nappes d’accompagnement aux cours d’eau.</p></li>
+<li><p>Le colmatage du fond du lit et le transfert de polluants agricoles par érosion des sols.</p></li>
+<li><p>Le manque d’habitats de reproduction des poissons (pour la pêche notamment).</p></li>
+<li><p>La dégradation des eaux de baignade par manque d’autoépuration des cours d’eau en lien avec la diversification des faciès et les écoulements hyporhéiques au niveau des radiers.</p></li>
+</ul>
+<p>Tous ces enjeux ne sont pas présents sur tous les territoires à l’exception du risque d’inondation. De même, leurs niveaux de sensibilité varient entre les bassins versants. La mise à disposition de jeux de données nationaux sur ces enjeux permettrait de les lier à la caractérisation hydromorphologique des cours d’eau et ainsi de faciliter l’argumentation de certaines actions. On peut citer par exemple les données inondation (TRI, Atlas des zones inondables, ouvrages de protection contre les inondations), les cartes de risque d’érodabilité des sols, les cartes des aquifères et des piézomètres, les localisations des carrières et des ouvrages d’art.</p>
+</section>
+<section id="synthèse-des-besoins" class="level3">
+<h3 class="anchored" data-anchor-id="synthèse-des-besoins">Synthèse des besoins</h3>
+<p>Les besoins exprimés correspondent principalement aux cours d’eau de tailles moyennes ou petites avec des enjeux parfois plus faibles que les grands cours d’eau aménagés où sont implantées les principales zones urbaines. Les petites ou moyennes rivières constituent la grande majorité du linéaire du réseau hydrographique et donc un investissement important lors des états des lieux. Les grands cours d’eau sont généralement mieux connus avec des campagnes de mesures précises et des caractérisations in situ à des échelles moindres mais à des résolutions plus fines que celles pouvant être atteintes à travers des outils de caractérisation à large échelle tels que Mapd’O. Un aspect important dans la caractérisation hydromorphologique des cours d’eau est la mise en relation de ces derniers avec les enjeux du territoire. Ces enjeux, liés à l’hydromorphologie des cours d’eau, permettent de proposer des actions sur des problématiques du territoire et pas uniquement sur les objectifs de bon état écologique. Des fonctionnalités ont également pu être proposées pour venir enrichir l’analyse et l’interprétation des résultats mis à disposition par l’application en permettant:</p>
+<ul>
+<li><p>la comparaison spatiale historique, par exemple d’évaluer les évolutions de la végétation rivulaire à partir des cartes du XXème siècle ou comparer des métriques dans le temps pour un segment des rivière</p></li>
+<li><p>d’effectuer une synthèse des métriques à partir de la sélection d’un tronçon ou d’un bassin versant</p></li>
+<li><p>d’effectuer un profil en travers (sur le MNT détendancé).</p></li>
+</ul>
+<p>Les structures comme les syndicats de bassin versant et les fédérations de pêches recouvrent des tailles variées et une diversité de compétences. Selon la taille des structures, elles ne disposent pas de spécialistes sur les différentes thématiques de gestion. Il faut donc que l’outil soit adapté à un utilisateur avec des connaissances dans le domaine de l’hydromorphologie mais pas un spécialiste.</p>
+<p>Un avertissement a été plusieurs fois émis sur l’usage de l’outil. L’application doit proposer une approche par bassin versant et non servir de substitut à des études plus précises de caractérisation d’un tronçon de cours d’eau, en vue de la définition d’une action. L’utilisation devrait ainsi rester dans le champ de l’aide au diagnostic de bassin (plutôt que viser à un diagnostic direct) pour la détermination des types d’actions à envisager sur des tronçons de cours d’eau.</p>
+</section>
+</section>
 <section id="production-des-données" class="level2">
 <h2 class="anchored" data-anchor-id="production-des-données">Production des données</h2>
 <section id="données-de-base" class="level3">
 <h3 class="anchored" data-anchor-id="données-de-base">Données de base</h3>
-<p>Les données de base utilisées pour la production des cartes sont les suivantes :</p>
+<p>Les données de base utilisées pour produire les cartes sont un modèle numérique de terrain de l’ensemble de la France, le RGE ALTI à une résolution de 5 m, et la base de données topographiques BD TOPO, qui fournit une description vectorielle du territoire et de ses infrastructures.</p>
 <table class="caption-top table">
+<caption>Source des données de base utilisées pour la production des cartes</caption>
 <thead>
 <tr class="header">
-<th><strong>Donnée</strong></th>
-<th><strong>Description</strong></th>
-<th><strong>Source</strong></th>
+<th>Donnée</th>
+<th>Description</th>
+<th>Source</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>RGE ALTI</td>
 <td>Modèle Numérique de Terrain de l’IGN</td>
-<td><a href="https://geoservices.ign.fr/rgealti">IGN</a></td>
+<td><a href="https://geoservices.ign.fr/rgealti">RGE ALTI</a></td>
 </tr>
 <tr class="even">
 <td>BD TOPO®</td>
-<td>Base de données topographiques de l’IGN</td>
-<td><a href="https://geoservices.ign.fr/bdtopo">IGN</a></td>
+<td>Base de données des élements du territoire et de ses infrastructures du territoire français de l’IGN</td>
+<td><a href="https://geoservices.ign.fr/bdtopo">BD TOPO</a></td>
+</tr>
+<tr class="odd">
+<td>RPG</td>
+<td>Base des données de référence des parcelles agricoles de l’IGN</td>
+<td><a href="https://geoservices.ign.fr/rpg" title="https://geoservices.ign.fr/rpg">RPG</a></td>
+</tr>
+<tr class="even">
+<td>BD Carthage®</td>
+<td>Base de données spatial des milieux aquatiques superficiels de la France&nbsp;</td>
+<td><a href="https://www.data.gouv.fr/fr/datasets/bd-carthage-r/" title="https://www.data.gouv.fr/fr/datasets/bd-carthage-r/">BD Carthage</a></td>
 </tr>
 </tbody>
 </table>
@@ -187,95 +238,14 @@ ul.task-list li input[type="checkbox"] {
 <section id="traitement-des-données" class="level3">
 <h3 class="anchored" data-anchor-id="traitement-des-données">Traitement des données</h3>
 <p><a href="https://tramebleue.github.io/fct-cli/">Fluvial Corridor Toolbox (FCT)</a> est un outil d’analyse hydromorphique de rivière par des approches géomatiques développé depuis 2011. L’outil a été initialement réalisé sur ArcGIS, puis sur QGIS et en Python 3. La version QGIS est disponible sous forme de plugin depuis 2019 et compte environ 10 téléchargements par mois. La version Python, moins répandue car plus difficile à utiliser, est destinée à l’analyse de réseaux hydrographiques entiers plutôt que des tronçons de cours d’eau. C’est cette dernière qui est utilisée pour produire les données exploitées dans l’application Mapd’O. Elle permet d’extraire des largeurs, des pentes, l’occupation du sol, la continuité latérale des cours d’eau à partir de données librement accessibles comme la BD TOPO® et les MNT de l’IGN. Ces variables sont synthétisées par tronçon le long de l’axe du fond de vallée (DGO ou Digital Geographical Unit) d’une longueur aujourd’hui défini à 200 mètres.</p>
-<table class="caption-top table">
-<caption>Synthèse des métriques produites par la FCT à l’échelle des DGO</caption>
-<colgroup>
-<col style="width: 23%">
-<col style="width: 52%">
-<col style="width: 23%">
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Variable</strong></th>
-<th><strong>Description</strong></th>
-<th><strong>Unité</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>drainage_surface</td>
-<td>surface drainée moyenne le long du talweg pour chaque DGO</td>
-<td>km2</td>
-</tr>
-<tr class="even">
-<td>continuity_valley_bottom</td>
-<td>surface de chaque classe de continuité latérale dans le fond de vallée</td>
-<td>m2</td>
-</tr>
-<tr class="odd">
-<td>sinuosity_index</td>
-<td>indice de sinuosité (en développement)</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>valley_bottom</td>
-<td>surface du fond de vallée</td>
-<td>m2</td>
-</tr>
-<tr class="odd">
-<td>landcover_valley_bottom</td>
-<td>surface de chaque classe d’occupation du sol dans le fond de vallée</td>
-<td>m2</td>
-</tr>
-<tr class="even">
-<td>slope_talweg</td>
-<td>pente moyenne du talweg</td>
-<td>%</td>
-</tr>
-<tr class="odd">
-<td>containment_index</td>
-<td>indice de confinement (largeur bande active / largeur vallée), voir thèse Elise</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>active_chanel_width</td>
-<td>largeur moyenne de la bande active</td>
-<td>m</td>
-</tr>
-<tr class="odd">
-<td>natural_corridor_width</td>
-<td>largeur moyenne du corridor naturel</td>
-<td>m</td>
-</tr>
-<tr class="even">
-<td>connected_corridor_width</td>
-<td>largeur moyenne de l’espace connecté au cours d’eau</td>
-<td>m</td>
-</tr>
-<tr class="odd">
-<td>elevation_talweg</td>
-<td>altitude du talweg</td>
-<td>m</td>
-</tr>
-<tr class="even">
-<td>slope_valley_bottom</td>
-<td>pente moyenne du fond de vallée</td>
-<td>%</td>
-</tr>
-<tr class="odd">
-<td>landcover_hypsometer_surface</td>
-<td>surface de chaque classe d’occupation du sol du BV au niveau du DGO</td>
-<td>km2</td>
-</tr>
-</tbody>
-</table>
-<p>Le BD TOPO® est utilisé pour produire une carte d’occupation des sols et une carte de continuité latérale des cours d’eau fournis par l’utilisateur afin de déterminer les différents compartiments de la vallée alluviale. L’espace est ensuite découpé en tronçon de 200m le long des cours d’eau.</p>
+<p>Tout d’abord, en fusionnant la BD Carthage® avec les données DEM, les limites du réseau hydrographique sont gravées dans les données topographiques. A partir de là, la zone du fond de la vallée est dérivée, ainsi que les caractéristiques représentant le relief du sol, la pente et la terrasse. Le fond de la vallée représente l’espace dans lequel l’analyse suivante est entreprise avec les données de BD TOPO®. Le BD TOPO® est utilisé pour produire une carte d’occupation des sols et une carte de continuité latérale des cours d’eau afin de déterminer les différents compartiments de la vallée alluviale. L’espace est ensuite découpé en tronçon de 200m le long des cours d’eau.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/methods/fct_landuse_ex.png" class="img-fluid figure-img" alt="Carte d’occupation des sols générée à partir de la BD TOPO® de l’IGN"></p>
-<figcaption>Carte d’occupation des sols du Drac à Saint-Julien-en-Champsaur, générée à partir de la BD TOPO® de l’IGN</figcaption>
+<figcaption>Carte d’occupation des sols du Drac à Saint-Julien-en-Champsaur, générée à partir de la BD TOPO® de l’IGN, montrant les troncons de 200m</figcaption>
 </figure>
 </div>
+<p>La carte de continuité latérale est ensuite derivé a partir de la carte d’occupation des sols. Elle permet de déterminer les différents compartiments de la vallée alluviale connecté latéralement à la rivière.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/methods/ftc_continuity_ex.png" class="img-fluid figure-img"></p>
@@ -288,10 +258,240 @@ ul.task-list li input[type="checkbox"] {
 <figcaption>Correspondance des espaces de la continuité latérale sur le Drac à Chabottes</figcaption>
 </figure>
 </div>
-<p>Des métriques sont ensuite calculées sur les différents espaces alluviaux et reportées sur le réseau hydrographique pour de futures représentations cartographiques et longitudinales.</p>
-
-
+<p>Basée sur ces cartes, des métriques sont ensuite calculées pour chaque tronçon de 200m le long de l’axe du fond de vallée (DGO ou Digital Geographical Unit).</p>
+<table class="caption-top table">
+<caption>Métriques produites par la FCT à l’échelle des DGOs</caption>
+<colgroup>
+<col style="width: 29%">
+<col style="width: 48%">
+<col style="width: 22%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Description</th>
+<th>Unité</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>measure</code></td>
+<td>Distance depuis l’éxutoire de l’axis</td>
+<td>m</td>
+</tr>
+<tr class="even">
+<td><code>strahler</code></td>
+<td>Ordre de Strahler</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td><code>talweg_elevation_min</code></td>
+<td>Élévation minimale du talweg</td>
+<td>m</td>
+</tr>
+<tr class="even">
+<td><code>active_channel_width</code></td>
+<td>Largeur du chenal actif</td>
+<td>m</td>
+</tr>
+<tr class="odd">
+<td><code>natural_corridor_width</code></td>
+<td>Largeur du corridor naturel</td>
+<td>m</td>
+</tr>
+<tr class="even">
+<td><code>connected_corridor_width</code></td>
+<td>Largeur du corridor connecté</td>
+<td>m</td>
+</tr>
+<tr class="odd">
+<td><code>valley_bottom_width</code></td>
+<td>Largeur du fond de vallée</td>
+<td>m</td>
+</tr>
+<tr class="even">
+<td><code>talweg_slope</code></td>
+<td>Pente du moyenne du talweg</td>
+<td>%</td>
+</tr>
+<tr class="odd">
+<td><code>floodplain_slope</code></td>
+<td>Pente moyenne du fond de vallée</td>
+<td>%</td>
+</tr>
+<tr class="even">
+<td><code>water_channel</code></td>
+<td>Surface en eau définie par la BD TOPO®</td>
+<td>m²</td>
+</tr>
+<tr class="odd">
+<td><code>gravel_bars</code></td>
+<td>Surface des eaux intermittentes / bancs sédimentaires de la BD TOPO®</td>
+<td>m²</td>
+</tr>
+<tr class="even">
+<td><code>natural_open</code></td>
+<td>Éspace de végétation ouverte</td>
+<td>m²</td>
+</tr>
+<tr class="odd">
+<td><code>forest</code></td>
+<td>Éspace de végétation fermée</td>
+<td>m²</td>
+</tr>
+<tr class="even">
+<td><code>grassland</code></td>
+<td>Parcelle de prairie permanente définie dans le RPG®</td>
+<td>m²</td>
+</tr>
+<tr class="odd">
+<td><code>crops</code></td>
+<td>Surface de cultures</td>
+<td>m²</td>
+</tr>
+<tr class="even">
+<td><code>diffuse_urban</code></td>
+<td>Zone d’habitation diffus proche de la zone d’habitation de la BD TOPO</td>
+<td>m²</td>
+</tr>
+<tr class="odd">
+<td><code>dense_urban</code></td>
+<td>Zone continue de l’espace bâti dense ou artificialisée</td>
+<td>m²</td>
+</tr>
+<tr class="even">
+<td><code>infrastructures</code></td>
+<td>Surface des infrastructures</td>
+<td>m²</td>
+</tr>
+<tr class="odd">
+<td><code>active_channel</code></td>
+<td>Surface du chenal actif : le surface en eau et bancs sédimentaires</td>
+<td>m²</td>
+</tr>
+<tr class="even">
+<td><code>riparian_corridor</code></td>
+<td>Surface du corridor riverain : le chenal actif avec la végétation rivulaire connectée</td>
+<td>m²</td>
+</tr>
+<tr class="odd">
+<td><code>semi_natural</code></td>
+<td>SSurface du corridor riverain avec surfaces agricoles connectées.</td>
+<td>m²</td>
+</tr>
+<tr class="even">
+<td><code>reversible</code></td>
+<td>Espace non urbanisé déconnecté du corridor fluvial par des infrastructures ou du bâti</td>
+<td>m²</td>
+</tr>
+<tr class="odd">
+<td><code>disconnected</code></td>
+<td>Zone bâti, dense ou peu dense, et les infrastructures de transport</td>
+<td>m²</td>
+</tr>
+<tr class="even">
+<td><code>built_environment</code></td>
+<td>Surface des zones bâties</td>
+<td>m²</td>
+</tr>
+<tr class="odd">
+<td><code>water_channel_pc</code></td>
+<td>Surface en eau définie par la BD TOPO®</td>
+<td>% du fond vallée</td>
+</tr>
+<tr class="even">
+<td><code>gravel_bars_pc</code></td>
+<td>Surface des eaux intermittentes / bancs sédimentaires de la BD TOPO®</td>
+<td>% du fond vallée</td>
+</tr>
+<tr class="odd">
+<td><code>natural_open_pc</code></td>
+<td>Éspace de végétation ouverte</td>
+<td>% du fond vallée</td>
+</tr>
+<tr class="even">
+<td><code>forest_pc</code></td>
+<td>Éspace de végétation fermée</td>
+<td>% du fond vallée</td>
+</tr>
+<tr class="odd">
+<td><code>grassland_pc</code></td>
+<td>Parcelle de prairie permanente définie dans le RPG®</td>
+<td>% du fond vallée</td>
+</tr>
+<tr class="even">
+<td><code>crops_pc</code></td>
+<td>Zone de cultures</td>
+<td>% du fond vallée</td>
+</tr>
+<tr class="odd">
+<td><code>diffuse_urban_pc</code></td>
+<td>Zone d’habitation diffus proche de la zone d’habitation de la BD TOPO</td>
+<td>% du fond vallée</td>
+</tr>
+<tr class="even">
+<td><code>dense_urban_pc</code></td>
+<td>Zone continue de l’espace bâti dense ou artificialisée</td>
+<td>% du fond vallée</td>
+</tr>
+<tr class="odd">
+<td><code>infrastructures_pc</code></td>
+<td>Infrastructure routière et ferroviaire</td>
+<td>% du fond vallée</td>
+</tr>
+<tr class="even">
+<td><code>active_channel_pc</code></td>
+<td>Surface du chenal actif : le surface en eau et bancs sédimentaires</td>
+<td>% du fond vallée</td>
+</tr>
+<tr class="odd">
+<td><code>riparian_corridor_pc</code></td>
+<td>Surface du corridor riverain : le chenal actif avec la végétation rivulaire connectée</td>
+<td>% du fond vallée</td>
+</tr>
+<tr class="even">
+<td><code>semi_natural_pc</code></td>
+<td>Surface du corridor riverain avec surfaces agricoles connectées.</td>
+<td>% du fond vallée</td>
+</tr>
+<tr class="odd">
+<td><code>reversible_pc</code></td>
+<td>Espace non urbanisé déconnecté du corridor fluvial par des infrastructures ou du bâti</td>
+<td>% du fond vallée</td>
+</tr>
+<tr class="even">
+<td><code>disconnected_pc</code></td>
+<td>Zone bâti, dense ou peu dense, et les infrastructures de transport</td>
+<td>% du fond vallée</td>
+</tr>
+<tr class="odd">
+<td><code>built_environment_pc</code></td>
+<td>Surface de zones bâti</td>
+<td>% du fond vallée</td>
+</tr>
+<tr class="even">
+<td><code>sum_area</code></td>
+<td>Surface totale</td>
+<td>m²</td>
+</tr>
+<tr class="odd">
+<td><code>idx_confinement</code></td>
+<td>Indice de confinement : Ratio de la largeur de la bande active sur la largeur du fond de vallée.</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
 </section>
+<section id="stockage-des-données" class="level3">
+<h3 class="anchored" data-anchor-id="stockage-des-données">Stockage des données</h3>
+<p>Les ensembles des données produits sont stockés dans une base de données <a href="https://www.postgresql.org/">PostgreSQL</a> et mis en place sur un <a href="https://geoserver.org/">geoserver</a>. Les données sont structurées en tables et vues pour faciliter leur exploitation dans l’application Mapd’O.</p>
+</section>
+</section>
+<section id="création-de-lapplication" class="level2">
+<h2 class="anchored" data-anchor-id="création-de-lapplication">Création de l’application</h2>
+<p>L’application Mapd’O est développée en <a href="https://www.r-project.org/">R</a> avec le package <a href="https://shiny.rstudio.com/">Shiny</a> et le framework <a href="https://thinkr-open.github.io/golem/">golem</a>. La carte interactive est générée avec <a href="https://rstudio.github.io/leaflet/">Leaflet</a>. Les graphiques sont produits avec <a href="https://plotly.com/r/">Plotly</a>.</p>
+
+
 </section>
 
 </main> <!-- /main -->
