@@ -4,16 +4,16 @@ title: "A propos"
 
 ## Comment citer
 
-Manière, L., Helling, L., Dunesme, S., & Vaudor, L. (2024). EVS-GIS/mapdoapp. UMR5600 Environnement, Ville, Société. <https://doi.org/10.5281/zenodo.11235929>
+Manière, L., Helling, L., Dunesme, S., & Vaudor, L. (2024). EVS-GIS/mapdoapp. UMR5600 Environnement, Ville, Société. [https://zenodo.org/records/13929042](https://doi.org/10.5281/zenodo.11235929){.uri}
 
 ## Partenaires
 
-::: {layout-ncol="3" layout-align="center" }
-[![](images/Logo-EVS-UMR5600-01.png)](https://umr5600.cnrs.fr/fr/accueil/){width="120"}
+::: {layout-ncol="3" layout-align="center"}
+[![](images/Logo-EVS-UMR5600-01.png)](https://umr5600.cnrs.fr/fr/accueil/)
 
-[![](images/Logo-OFB-soutien-financier-01.png)](https://www.ofb.gouv.fr/){width="120"}
+[![](images/Logo-OFB-soutien-financier-01.png)](https://www.ofb.gouv.fr/)
 
-[![](images/CNRS-Logo-01.png)](https://www.cnrs.fr/){width="350"}
+[![](images/CNRS-Logo-01.png)](https://www.cnrs.fr/)
 :::
 
 ## Développement
@@ -27,5 +27,3 @@ Le code source est disponible sur [GitHub](https://github.com/EVS-GIS/mapdoapp).
 ## Référent scientifique
 
 Lise Vaudor, *CNRS UMR 5600 Environnement Ville Société* - [lise.vaudor\@ens-lyon.fr](mailto:lise.vaudor@ens-lyon.fr)
-
-
