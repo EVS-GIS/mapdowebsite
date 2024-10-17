@@ -1,0 +1,28 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Mapd'O"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Accueil
+      - href: methods.qmd
+        text: Méthodologie
+      - href: modules.qmd
+        text: Modules
+      - href: themes.qmd
+        text: Enjeux thématiques
+      - href: about.qmd
+        text: A propos
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: [cosmo, theme-dark.scss]
+    css: styles.css
+    toc: true
+
+editor: visual
